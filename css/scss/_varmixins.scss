@@ -1,0 +1,20 @@
+$azul2: #185b5c;
+$azul1: #3a8d85;
+$rosa: #f0abb1;
+$branco: #f2f2f2;
+
+@mixin d($device) {
+  @if $device == mobile {
+    @media (max-width: 680px) {
+      @content;
+    }
+  } @else if $device == tablet {
+    @media (max-width: 950px) {
+      @content;
+    }
+  } @else if $device == medio {
+    @media (max-width: 1150px) {
+      @content;
+    }
+  }
+}

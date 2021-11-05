@@ -1,0 +1,26 @@
+.contato-mapa {
+  display: flex;
+  margin-bottom: 30px;
+  .contato {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    span {
+      display: block;
+      + span {
+        margin-top: 30px;
+      }
+    }
+  }
+  @include d(tablet) {
+    flex-direction: column;
+    margin-bottom: 10px;
+    .contato {
+      padding: 50px 0;
+      order: 1;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.modalidades {
+  padding-bottom: 100px;
+  margin-bottom: 30px;
+  position: relative;
+  .modalidades-ctt {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 100px;
+    .coluna1-mod {
+      margin-right: 50px;
+    }
+  }
+  .container {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 25px;
+      background-image: url("../../img/bolinhas.svg");
+      background-repeat: no-repeat;
+      background-size: 40px;
+      right: 0;
+      top: 60px;
+      @include d(medio) {
+        right: 30px;
+      }
+      @include d(mobile) {
+        display: none;
+      }
+    }
+  }
+  .img-mod {
+    position: absolute;
+    width: 300px;
+    right: 0;
+    bottom: 0;
+    filter: grayscale(0.8) hue-rotate(160deg);
+  }
+  @include d(medio) {
+    margin-bottom: 10px;
+    .img-mod {
+      display: none;
+    }
+  }
+  @include d(mobile) {
+    .modalidades-ctt {
+      flex-direction: column;
+      .coluna1-mod {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.coluna2-mod {
+  position: relative;
+  .troca-mod {
+    h3 {
+      font-size: 18;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    p {
+      max-width: 400px;
+      margin-bottom: 30px;
+      @include d(mobile) {
+        max-width: 90%;
+      }
+    }
+    a {
+      font-weight: 600;
+    }
+  }
+}
