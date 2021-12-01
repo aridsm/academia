@@ -3,7 +3,12 @@ const navMod = document.querySelector('.modalidades-btt nav')
 
 function modMenu() {
   navMod.classList.toggle('ativo')
-  bttMod.classList.toggle('ativo')
+  this.classList.toggle('ativo');
+  if (navMod.classList.contains('ativo')){
+    this.setAttribute('aria-expanded', 'true')
+  } else {
+    this.setAttribute('aria-expanded', 'false')
+  }
 }
 
 bttMod.addEventListener('click', modMenu)

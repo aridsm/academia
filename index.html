@@ -16,7 +16,7 @@
 <body>
   <section class="secao-inicial">
     <div class="container">
-      <header>
+      <header aria-labelledby="cabeçalho">
         <div class="row1-header">
           <a href="#">Espaço cliente</a>
           <nav>
@@ -29,10 +29,11 @@
         <div class="row2-header">
           <nav class="nav-menu">
             <a href="#" class="logo">LOGO</a>
-            <div class="js-menu-nav">
+            <div class="js-menu-nav" id="menu-nav">
               <div class="modalidades-btt link-header">
-                <button class="btt-modalidades">Modalidades</button>
-                <nav>
+                <!-- adicionar aria-expanded="true" no js-->
+                <button class="btt-modalidades" aria-expanded="false" aria-controls="nav-modalidades" id="btn-modalidades">Modalidades</button>
+                <nav id="nav-modalidades" aria-labelledby="btn-modalidades">
                   <a href="#">Musculação</a>
                   <a href="#">Natação</a>
                   <a href="#">Dança</a>
@@ -46,7 +47,7 @@
           <a href="#" class="header-matricula">Matricule-se</a>
 
           <div class="btt-menu">
-            <button>
+            <button aria-label="abrir menu" aria-controls="menu-nav">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list abrir-menu" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
               </svg>
@@ -76,24 +77,24 @@
       <h2>Modalidades</h2>
       <div class="modalidades-ctt">
         <div class="coluna1-mod">
-          <button class="btts-mod-planos ativo" data-aos="zoom-in-right" data-aos-duration="800">Musculação</button>
-          <button class="btts-mod-planos" data-aos="zoom-in-right" data-aos-duration="800">Natação</button>
-          <button class="btts-mod-planos" data-aos="zoom-in-right" data-aos-duration="800">Dança</button>
+          <button class="btts-mod-planos ativo" data-aos="zoom-in-right" data-aos-duration="800" aria-label="abrir modalidade musculaçao" aria-controls="musculacao-modalidades" id="musculacao-modalidades-btn">Musculação</button>
+          <button class="btts-mod-planos" data-aos="zoom-in-right" data-aos-duration="800" aria-label="abrir modalidade nataçao" aria-label="abrir modalidade nataçao" aria-controls="natacao-modalidades" id="natacao-modalidades-btn">Natação</button>
+          <button class="btts-mod-planos" data-aos="zoom-in-right" data-aos-duration="800" aria-label="abrir modalidade dança" aria-label="abrir modalidade dança" aria-controls="danca-modalidades" id="danca-modalidades-btn">Dança</button>
         </div>
         <div class="coluna2-mod">
-          <div class="troca-mod ativo" data-aos="zoom-out" data-aos-duration="800">
+          <div class="troca-mod ativo" data-aos="zoom-out" data-aos-duration="800" id="musculacao-modalidades" aria-labelledby="musculacao-modalidades-btn">
             <h3>Musculação</h3>
             <p class="texto">Fusce ac ex et purus sagittis interdum at non magna. Donec consectetur tortor sodales sapien congue tristique. </p>
             <a href="#">Ver ambiente ➞</a>
           </div>
 
-          <div class="troca-mod">
+          <div class="troca-mod" id="natacao-modalidades" aria-labelledby="natacao-modalidades-btn">
             <h3>Natação</h3>
             <p class="texto">Inventore dolore rerum quia optio iusto. Fugit ipsa sint quas adipisci porro ea vero. </p>
             <a href="#">Ver ambiente ➞</a>
           </div>
 
-          <div class="troca-mod">
+          <div class="troca-mod" id="danca-modalidades" aria-labelledby="danca-modalidades-btn">
             <h3>Dança</h3>
             <p class="texto">Quos odio eius tenetur in necessitatibus, eum quaerat accusamus praesentium consectetur voluptatibus ad recusandae. </p>
             <a href="#">Ver ambiente ➞</a>
@@ -157,21 +158,21 @@
         </div>
         <div class="container-btts-troca-plano">
           <div class="btts-troca-plano">
-            <button onclick="antSlide()">
+            <button onclick="antSlide()" aria-label="plano anterior">
               <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="#3a8d85" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
               </svg>
             </button>
-            <button onclick="proxSlide()">
+            <button onclick="proxSlide()" aria-label="proximo plano">
               <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="#3a8d85" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
               </svg>
             </button>
           </div>
           <div class="planos-btt">
-            <button class="btts-mod-planos ativo" data-aos="zoom-in-left" data-aos-duration="800">Musculação</button>
-            <button class="btts-mod-planos" data-aos="zoom-in-left" data-aos-duration="800">Natação</button>
-            <button class="btts-mod-planos" data-aos="zoom-in-left" data-aos-duration="800">Dança</button>
+            <button class="btts-mod-planos ativo" data-aos="zoom-in-left" data-aos-duration="800" aria-label="abrir plano musculaçao">Musculação</button>
+            <button class="btts-mod-planos" data-aos="zoom-in-left" data-aos-duration="800" aria-label="abrir plano nataçao">Natação</button>
+            <button class="btts-mod-planos" data-aos="zoom-in-left" data-aos-duration="800" aria-label="abrir plano dança">Dança</button>
           </div>
         </div>
       </div>
@@ -188,7 +189,7 @@
       <span>contato@contato.com</span>
     </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10907.508193449221!2d41.27298959216703!3d39.90075224610403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1635989751314!5m2!1sen!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10907.508193449221!2d41.27298959216703!3d39.90075224610403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1635989751314!5m2!1sen!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" title="mapa" aria-label="mapa da academia"></iframe>
   </section>
 
   <footer class="gradiente">
