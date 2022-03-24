@@ -8,3 +8,5 @@ Projeto de landing page uma academia fictícia.
 - Mapa do "local"
  
 link: https://aridsm.github.io/academia/
+
+![página inicial](https://github.com/aridsm/academia/blob/main/page.png)
