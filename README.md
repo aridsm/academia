@@ -1,3 +1,10 @@
-# academia
+# Academia 🏋️
+
+Projeto de landing page uma academia fictícia.
+
+## Conta com
+- Seção de modalidades
+- Seção de planos
+- Mapa do "local"
  
-https://aridsm.github.io/academia/
+link: https://aridsm.github.io/academia/
