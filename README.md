@@ -1,6 +1,6 @@
 # Academia 🏋️
 
-Projeto de landing page uma academia fictícia.
+Projeto de landing page de uma academia fictícia.
 
 ## Conta com
 - Seção de modalidades
