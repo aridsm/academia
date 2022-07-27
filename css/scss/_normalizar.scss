@@ -12,6 +12,10 @@ h2 {
   font-weight: 400;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -26,4 +30,8 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+li {
+  list-style: none;
 }

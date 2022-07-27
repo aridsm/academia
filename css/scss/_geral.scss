@@ -11,6 +11,10 @@ body {
   padding: 0 0.6rem
 }
 
+.sections {
+  padding: 4rem 0
+}
+
 .btn {
   padding: .8rem 1.4rem;
   background: $cor-4;
@@ -39,4 +43,14 @@ body {
   color: $cor-1;
   position: relative;
   z-index: 1;
+}
+
+.banner {
+  background: $cor-3;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+
+  .texto-banner {
+    opacity: .5;
+  }
 }

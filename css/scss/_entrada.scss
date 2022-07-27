@@ -60,7 +60,7 @@
     display: grid;
     grid-template-columns: auto;
     right: .8rem;
-    top: calc(50% - 5rem);
+    bottom: 3rem;
     grid-gap: .5rem;
 
     a {
@@ -82,8 +82,8 @@
   .sombra {
     width: 500px;
     height: 500px;
-    top: -250px;
+    top: -100px;
     left: calc(50% - 250px);
-    filter: blur(500px);
+    filter: blur(450px);
   }
 }

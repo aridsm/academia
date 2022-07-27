@@ -1,0 +1,44 @@
+#valores {
+  background: $cor-5;
+
+  .container {
+    display: flex;
+  }
+
+  .content {
+    max-width: 21rem;
+  }
+
+  .description {
+    margin-top: 1rem;
+  }
+
+  .btn {
+    margin-top: 3rem;
+  }
+
+  .lista-valores {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: .5rem;
+    margin-left: auto;
+
+    li {
+      border: 1px solid black;
+      background: $cor-4;
+      border-radius: .2rem;
+      padding: 1.5rem;
+
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+
+      img {
+        width: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        max-width: 11rem;
+      }
+    }
+  }
+}
