@@ -1,0 +1,86 @@
+#entrada {
+  background: url('../../img/bg-entrada.jpg');
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -6rem;
+  padding-top: 6rem;
+
+  .container {
+    display: grid;
+    min-height: calc(100vh - 6rem);
+    position: relative;
+  }
+
+  .textos {
+    margin: auto;
+    text-align: center;
+    padding: 5rem 0;
+    position: relative;
+
+    h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(87.55deg, #2C2F31 0.32%, #FFFFFF 19.97%, #9A9A9A 38.83%, #FFFFFF 61.29%, #9A9A9A 77.33%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      position: relative;
+      z-index: 1;
+
+      span {
+        background: $cor-1;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+
+    .btn {
+      margin-top: 3rem;
+    }
+
+    &::before {
+      content: 'Integer';
+      font-family: 'Days One', sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      position: absolute;
+      color: $cor-2;
+      font-size: 130px;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      opacity: 0.07;
+    }
+  }
+
+  .redes {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto;
+    right: .8rem;
+    top: calc(50% - 5rem);
+    grid-gap: .5rem;
+
+    a {
+      width: 2rem;
+      height: 2rem;
+      display: grid;
+      place-items: center;
+      border: 1px solid $cor-4;
+      background: $cor-3;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 50%;
+
+      &:hover {
+        border-color: $cor-1;
+      }
+    }
+  }
+
+  .sombra {
+    top: -100px;
+    left: calc(50% - 100px)
+  }
+}

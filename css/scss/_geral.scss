@@ -1,0 +1,42 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $cor-2;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.6rem
+}
+
+.btn {
+  padding: .8rem 1.2rem;
+  background: $cor-4;
+  color: $cor-1;
+  border: 1px solid black;
+  border-radius: .2rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  transition: .1s;
+
+  &:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25), 0 0 0 1px $cor-1;
+  }
+}
+
+.sombra {
+  width: 200px;
+  height: 200px;
+  background: $cor-2;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(200px);
+}
+
+.subtitle {
+  text-transform: uppercase;
+  color: $cor-1;
+  position: relative;
+  z-index: 1;
+}
