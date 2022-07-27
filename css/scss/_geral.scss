@@ -17,12 +17,9 @@ body {
 
 .btn {
   padding: .8rem 1.4rem;
-  background: $cor-4;
   color: $cor-1;
-  border: 1px solid black;
-  border-radius: .2rem;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
   transition: .1s;
+  @include cards;
 
   &:hover {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), 0 0 0 1px $cor-1;
@@ -43,6 +40,7 @@ body {
   color: $cor-1;
   position: relative;
   z-index: 1;
+  margin-bottom: .2rem;
 }
 
 .banner {

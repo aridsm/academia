@@ -3,3 +3,10 @@ $cor-2: #F5F5F5;
 $cor-3: #1B1C1E;
 $cor-4: #202223;
 $cor-5: #151717;
+
+@mixin cards {
+  border: 1px solid black;
+  background: $cor-4;
+  border-radius: .2rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}

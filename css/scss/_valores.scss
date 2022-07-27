@@ -3,6 +3,8 @@
 
   .container {
     display: flex;
+    align-items: center;
+    position: relative;
   }
 
   .content {
@@ -11,6 +13,7 @@
 
   .description {
     margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   .btn {
@@ -24,12 +27,8 @@
     margin-left: auto;
 
     li {
-      border: 1px solid black;
-      background: $cor-4;
-      border-radius: .2rem;
       padding: 1.5rem;
-
-      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+      @include cards;
 
       img {
         width: 2rem;
@@ -40,5 +39,14 @@
         max-width: 11rem;
       }
     }
+  }
+
+  .barra {
+    width: 3px;
+    height: 10rem;
+    background: $cor-1;
+    position: absolute;
+    right: -3px;
+    top: calc(50% - 5rem)
   }
 }

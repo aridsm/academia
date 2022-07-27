@@ -68,10 +68,7 @@
       height: 2rem;
       display: grid;
       place-items: center;
-      border: 1px solid black;
-      background: $cor-3;
-      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-      border-radius: 50%;
+      @include cards;
 
       &:hover {
         border-color: $cor-1;
