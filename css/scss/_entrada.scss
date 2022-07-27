@@ -68,9 +68,9 @@
       height: 2rem;
       display: grid;
       place-items: center;
-      border: 1px solid $cor-4;
+      border: 1px solid black;
       background: $cor-3;
-      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
       border-radius: 50%;
 
       &:hover {
@@ -80,7 +80,10 @@
   }
 
   .sombra {
-    top: -100px;
-    left: calc(50% - 100px)
+    width: 500px;
+    height: 500px;
+    top: -250px;
+    left: calc(50% - 250px);
+    filter: blur(500px);
   }
 }
