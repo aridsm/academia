@@ -12,9 +12,29 @@
     justify-content: center;
 
     >li {
-      padding: 2rem;
+      padding: 3rem 2rem;
       @include cards;
       max-width: 16rem;
+      position: relative;
+      transition: .1s;
+
+      &:hover {
+        border: 1px solid $cor-1;
+        background: $cor-6;
+      }
+
+      &:nth-of-type(2) {
+        border: 1px solid $cor-1;
+        margin-top: -1rem;
+      }
+
+      .recomendado {
+        position: absolute;
+        top: -1.5rem;
+        right: 0;
+        left: 0;
+        color: $cor-1
+      }
 
       h3 {
         text-align: center;

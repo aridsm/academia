@@ -1,5 +1,7 @@
 #entrada {
   background: url('../../img/bg-entrada.jpg');
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,6 +28,7 @@
       background-clip: text;
       position: relative;
       z-index: 1;
+      margin-bottom: .5rem;
 
       span {
         background: $cor-1;
@@ -82,5 +85,31 @@
     top: -100px;
     left: calc(50% - 250px);
     filter: blur(450px);
+  }
+}
+
+@media (max-width: 530px) {
+  #entrada {
+    .textos {
+      h1 {
+        font-size: 1.75rem;
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  #entrada {
+    .textos {
+      &::before {
+        font-size: 60px;
+
+        top: 2.5rem;
+      }
+    }
   }
 }

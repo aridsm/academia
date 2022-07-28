@@ -50,3 +50,22 @@
     top: calc(50% - 5rem)
   }
 }
+
+@media (max-width: 880px) {
+  #valores {
+    .container {
+      flex-direction: column;
+
+      .content {
+        text-align: center;
+        margin-bottom: 3rem;
+
+      }
+
+      .lista-valores {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+      }
+    }
+  }
+}

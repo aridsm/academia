@@ -29,23 +29,34 @@
       height: 100%;
       object-fit: cover;
       display: block;
+      mask-image: url('../../img/bg-sobre.svg');
+      -webkit-mask-image: url('../../img/bg-sobre.svg');
+      mask-size: 450px;
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: 450px;
+      mask-position: center;
+      -webkit-mask-position: center;
     }
-  }
-
-  .img img {
-    mask-image: url('../../img/bg-sobre.svg');
-    -webkit-mask-image: url('../../img/bg-sobre.svg');
-    mask-size: 450px;
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: 450px;
-    mask-position: center;
-    -webkit-mask-position: center;
   }
 
   .sombra {
     top: -100px;
     left: calc(50% - 100px);
     filter: blur(230px);
+  }
+}
+
+@media (max-width: 880px) {
+  #sobre {
+    .container {
+      flex-direction: column;
+
+      .content {
+        text-align: center;
+        margin-bottom: 3rem;
+        order: -1;
+      }
+    }
   }
 }
