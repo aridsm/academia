@@ -2,6 +2,15 @@
   background: $cor-4;
   position: relative;
 
+  .container {
+    position: relative;
+
+    .enf {
+      right: 1rem;
+      top: 1rem
+    }
+  }
+
   .titulos {
     text-align: center;
     margin-bottom: 6rem;
