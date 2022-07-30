@@ -42,3 +42,21 @@ footer {
     text-align: center;
   }
 }
+
+@media (max-width: 800px) {
+  footer {
+    .container {
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+      text-align: center;
+
+      .menu {
+        nav {
+          grid-template-columns: auto;
+        }
+      }
+
+    }
+  }
+}

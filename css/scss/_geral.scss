@@ -13,7 +13,7 @@ body {
 }
 
 .sections {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .btn {
@@ -46,13 +46,11 @@ body {
 }
 
 .banner {
-  background: $cor-3;
+  background: $cor-6;
+  color: $cor-1;
   padding: 1.5rem 0;
   text-transform: uppercase;
-
-  .texto-banner {
-    opacity: .5;
-  }
+  border: 1px solid black;
 }
 
 .enf {
@@ -60,6 +58,22 @@ body {
   height: 2.7rem;
   background: url('../../img/ball.svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 2.7rem;
   position: absolute;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $cor-5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $cor-1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $cor-3;
 }

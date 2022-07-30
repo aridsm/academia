@@ -30,8 +30,14 @@
     align-items: flex-start;
 
     li {
-      width: 15rem;
+      width: 16rem;
       position: relative;
+      border: 1px solid transparent;
+
+      a {
+
+        padding: 1rem;
+      }
 
       .img {
         width: 100%;
@@ -46,6 +52,10 @@
 
       +li {
         margin-left: 2rem;
+      }
+
+      &:hover {
+        @include cards
       }
     }
   }
