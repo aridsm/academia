@@ -1,0 +1,44 @@
+footer {
+  background: $cor-5;
+  padding: 1.5rem 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem
+  }
+
+  .title-footer {
+    font-family: 'Days One', sans-serif;
+    margin-bottom: .5rem;
+  }
+
+  .menu {
+    nav {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: .5rem
+    }
+  }
+
+  .address {
+    .endereco {
+      margin-bottom: 1rem;
+    }
+
+    .redes {
+      a img {
+        width: 1.2rem
+      }
+
+      a+a {
+        margin-left: .3rem;
+      }
+    }
+  }
+
+  .by {
+    padding-top: 2rem;
+    text-align: center;
+  }
+}

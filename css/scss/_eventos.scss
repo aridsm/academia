@@ -83,7 +83,9 @@
 
   .btn {
     display: table;
-    margin: 4rem auto 0 auto
+    margin: 4rem auto 0 auto;
+    position: relative;
+    z-index: 999;
   }
 }
 

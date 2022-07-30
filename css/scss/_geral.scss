@@ -21,6 +21,7 @@ body {
   color: $cor-1;
   transition: .1s;
   @include cards;
+  background: $cor-6;
 
   &:hover {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), 0 0 0 1px $cor-1;

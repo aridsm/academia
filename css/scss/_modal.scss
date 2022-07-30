@@ -1,0 +1,54 @@
+#modal {
+  position: relative;
+
+  display: none;
+
+  .backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+  }
+
+  .modal {
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $cor-6;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid black;
+
+    .content {
+      padding: 1rem;
+
+      p {
+        margin-top: 1rem;
+      }
+    }
+
+    .btn-fechar {
+      @include cards;
+      display: grid;
+      place-items: center;
+      width: 1.8rem;
+      height: 1.8rem;
+      position: absolute;
+      top: -.3rem;
+      right: -.3rem;
+
+      img {
+        width: 1.2rem
+      }
+
+      &:hover {
+        border-color: $cor-1;
+      }
+    }
+  }
+}

@@ -1,3 +1,5 @@
+//menu mobile
+
 const btnMobile = document.querySelector('.menu-mobile');
 const menu = document.querySelector('.menu');
 

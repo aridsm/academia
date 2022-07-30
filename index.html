@@ -13,6 +13,16 @@
 </head>
 
 <body>
+  <div id="modal">
+    <div class="backdrop"></div>
+    <div class="modal">
+      <button aria-label="fechar modal" class="btn-fechar"><img src="./img/x.svg" alt=""></button>
+      <div class="content">
+        <img src="./img/gal-1.webp" alt="">
+        <p>lorem lorem</p>
+      </div>
+    </div>
+  </div>
   <header id="header">
     <nav class="container">
       <a href="#" class="logo">GYM</a>
@@ -200,9 +210,52 @@
       </div>
       <div class="sombra"></div>
     </section>
+    <section id="galeria" class="sections">
+      <div class="container">
+        <div class="textos">
+          <p class="subtitle">elit beatae asperiores</p>
+          <h2>Conheça nosso ambiente</h2>
+        </div>
+
+        <ul>
+          <li role="button" tabindex="0"><img src="./img/gal-1.webp" alt="Homem andando em esteira"></li>
+          <li role="button" tabindex="0"><img src="./img/gal-2.webp" alt="Mulher fazendo agachamento com barra"></li>
+          <li role="button" tabindex="0"><img src="./img/gal-3.webp" alt="Squat rack"></li>
+          <li role="button" tabindex="0"><img src="./img/gal-4.webp" alt="Homem fazendo agachamento com barra"></li>
+          <li role="button" tabindex="0"><img src="./img/gal-5.webp" alt="Esteiras"></li>
+          <li role="button" tabindex="0"><img src="./img/gal-6.webp" alt="Pesos"></li>
+        </ul>
+      </div>
+    </section>
   </main>
   <footer>
-    <a href="https://www.flaticon.com/free-icons/check-mark" title="check mark icons">Check mark icons created by Freepik - Flaticon</a>
+    <div class="container">
+      <div class="menu">
+        <p class="title-footer">Menu</p>
+        <nav>
+          <a href="#">Modalidades</a>
+          <a href="#">Sobre</a>
+          <a href="#">Contato</a>
+          <a href="#">Espaço cliente</a>
+          <a href="#">Matricule-se</a>
+        </nav>
+      </div>
+      <a href="https://www.flaticon.com/free-icons/check-mark" title="check mark icons">Check mark icons <br> created by Freepik - Flaticon</a>
+      <address class="address">
+        <div class="endereco">
+          <p class="title-footer">Endereço</p>
+          <p>Fortaleza - CE <br>
+            Lorem Ipsum, 999</p>
+        </div>
+        <div class="redes">
+          <p class="title-footer">Siga-nos</p>
+          <a href="#"><img src="./img/instagram.svg" alt="instagram"></a>
+          <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+          <a href="#"><img src="./img/youtube.svg" alt="youtube"></a>
+        </div>
+      </address>
+    </div>
+    <div class="by">By <a href="#">Ariane Morelato</a></div>
   </footer>
   <script src="script.js"></script>
 </body>
