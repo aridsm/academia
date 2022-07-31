@@ -97,6 +97,14 @@
     bottom: 20%;
     right: 20%
   }
+
+  .det {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 530px) {
@@ -110,7 +118,16 @@
         }
       }
     }
+
+    .sombra {
+      width: 250px;
+      height: 250px;
+      top: -50px;
+      left: calc(50% - 150px);
+      filter: blur(200px);
+    }
   }
+
 }
 
 @media (max-width: 800px) {
@@ -121,6 +138,16 @@
 
         top: 2.5rem;
       }
+    }
+
+    .enf-1 {
+      bottom: 20%;
+      left: 8%
+    }
+
+    .enf-2 {
+      bottom: 30%;
+      right: 8%
     }
   }
 }

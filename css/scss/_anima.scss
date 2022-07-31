@@ -1,0 +1,25 @@
+[data-anima] {
+  transition: .7s;
+  opacity: .6;
+}
+
+[data-anima="f-bottom"] {
+  transform: translate3d(0, 2rem, 0);
+}
+
+[data-anima="f-top"] {
+  transform: translate3d(0, -2rem, 0);
+}
+
+[data-anima="f-left"] {
+  transform: translate3d(-2rem, 0, 0);
+}
+
+[data-anima="f-right"] {
+  transform: translate3d(2rem, 0, 0);
+}
+
+[data-anima].animated {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}

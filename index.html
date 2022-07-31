@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gym - Lorem ipsum dolor">
   <title>GYM | Pagina Inicial</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,14 +40,15 @@
   <main>
     <section id="entrada">
       <div class="sombra"></div>
-      <div class="enf enf-1"></div>
-      <div class="enf enf-2"></div>
+      <div class="enf enf-1" data-anima="f-left"></div>
+      <div class="enf enf-2" data-anima="f-right"></div>
       <div class="container">
         <div class="textos">
-          <p class="subtitle">Fringilla purus et</p>
-          <h1>Integer interdum dapibus <br><span>magna</span> sagittis</h1>
-          <p>Fusce et nisi pellentesque, fringilla purus et,<br> ultricies ex</p>
-          <a href="" class="btn">Comece agora</a>
+          <img src="./img/enf.svg" alt="" class="det">
+          <p class="subtitle" data-anima="f-top">Fringilla purus et</p>
+          <h1 data-anima="f-top">Integer interdum dapibus <br><span>magna</span> sagittis</h1>
+          <p data-anima="f-bottom">Fusce et nisi pellentesque, fringilla purus et,<br> ultricies ex</p>
+          <a href="#" class="btn" data-anima="f-bottom">Comece agora</a>
         </div>
         <address class="endereco">
           <p>Fortaleza - CE <br>
@@ -66,11 +68,11 @@
     <section id="sobre" class="sections">
       <div class="sombra"></div>
       <div class="container">
-        <div class="img">
+        <div class="img" data-anima="f-right">
           <img src="./img/sobre-img.webp" alt="">
           <div class="enf"></div>
         </div>
-        <div class="content">
+        <div class="content" data-anima="f-left">
           <p class="subtitle">Et nisi pellentesque</p>
           <h2>Curabitur nec augue</h2>
           <p class="description">Nam tempus felis sapien, sed semper justo placerat vel. Nunc ut justo commodo, convallis purus et, dapibus metus.</p>
@@ -80,13 +82,13 @@
     </section>
     <section id="valores" class="sections">
       <div class="container">
-        <div class="content">
+        <div class="content" data-anima="f-right">
           <p class="subtitle">Et nisi pellentesque</p>
           <h2>Aliquam erat volutpat</h2>
           <p class="description">Nam tempus felis sapien, sed semper justo placerat vel. Nunc ut justo commodo, convallis purus et, dapibus metus.</p>
           <img src="./img/enf.svg" alt="">
         </div>
-        <ul class="lista-valores">
+        <ul class="lista-valores" data-anima="f-left">
           <li>
             <img src="./img/val-1-icon.png" alt="">
             <p>Phasellus feugiat tellus eu lorem sagittis placera</p>
@@ -109,11 +111,11 @@
     </section>
     <section id="eventos" class="sections">
       <div class="container">
-        <div class="titulos">
+        <div class="titulos" data-anima="f-top">
           <p class="subtitle">Fringilla purus et</p>
           <h2>NOSSOS PROXIMOS<br> EVENTOS</h2>
         </div>
-        <ul class="lista-eventos">
+        <ul class="lista-eventos" data-anima="f-bottom">
           <li>
             <a href="#">
               <div class="img"><img src="./img/evento-1.webp" alt=""></div>
@@ -155,11 +157,11 @@
     </section>
     <section id="modalidades" class="sections">
       <div class="container">
-        <div class="titulos">
+        <div class="titulos" data-anima="f-top">
           <p class="subtitle">Et nisi pellentesque</p>
           <h2>NOSSOS PLANOS</h2>
         </div>
-        <ul class="lista-planos">
+        <ul class="lista-planos" data-anima="f-bottom">
           <li>
             <a href="#">
               <h3>Mensal</h3>
@@ -211,18 +213,18 @@
     </section>
     <section id="galeria" class="sections">
       <div class="container">
-        <div class="textos">
+        <div class="textos" data-anima="f-top">
           <p class="subtitle">elit beatae asperiores</p>
           <h2>Conheça nosso ambiente</h2>
         </div>
 
-        <ul>
-          <li role="button" tabindex="0" data-descricao="Mauris iaculis ligula mattis"><img src="./img/gal-1.webp" alt="Homem andando em esteira"></li>
-          <li role="button" tabindex="0" data-descricao="Ut fringilla velit sit amet turpis molestie suscipit"><img src="./img/gal-2.webp" alt="Mulher fazendo agachamento com barra"></li>
-          <li role="button" tabindex="0" data-descricao="Phasellus rhoncus cursus eros vitae condimentum"><img src="./img/gal-3.webp" alt="Squat rack"></li>
-          <li role="button" tabindex="0" data-descricao=" Etiam lacus erat, semper vitae purus non"><img src="./img/gal-4.webp" alt="Homem fazendo agachamento com barra"></li>
-          <li role="button" tabindex="0" data-descricao="Cras maximus magna sed hendrerit laoreet."><img src="./img/gal-5.webp" alt="Esteiras"></li>
-          <li role="button" tabindex="0" data-descricao="Pellentesque aliquam metus eget libero ultricies"><img src="./img/gal-6.webp" alt="Pesos"></li>
+        <ul data-anima="f-bottom">
+          <li><button data-descricao="Mauris iaculis ligula mattis"><img src="./img/gal-1.webp" alt="Homem andando em esteira"></button></li>
+          <li><button data-descricao="Ut fringilla velit sit amet turpis molestie suscipit"><img src="./img/gal-2.webp" alt="Mulher fazendo agachamento com barra"></button></li>
+          <li><button data-descricao="Phasellus rhoncus cursus eros vitae condimentum"><img src="./img/gal-3.webp" alt="Squat rack"></button></li>
+          <li><button data-descricao=" Etiam lacus erat, semper vitae purus non"><img src="./img/gal-4.webp" alt="Homem fazendo agachamento com barra"></button></li>
+          <li><button data-descricao="Cras maximus magna sed hendrerit laoreet."><img src="./img/gal-5.webp" alt="Esteiras"></button></li>
+          <li><button data-descricao="Pellentesque aliquam metus eget libero ultricies"><img src="./img/gal-6.webp" alt="Pesos"></button></li>
         </ul>
       </div>
     </section>

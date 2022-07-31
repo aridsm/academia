@@ -4,7 +4,6 @@ body {
   font-size: 15px;
 }
 
-
 .container {
   max-width: 1020px;
   width: 100%;
@@ -76,4 +75,12 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: $cor-3;
+}
+
+@media (max-width: 640px) {
+  .enf {
+    width: 1.6rem;
+    background-size: 1.6rem;
+    height: 1.6rem;
+  }
 }

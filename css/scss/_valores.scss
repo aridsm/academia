@@ -45,8 +45,8 @@
     width: 3px;
     height: 10rem;
     background: $cor-1;
-    position: absolute;
-    right: -3px;
+    position: relative;
+    right: -.5rem;
     top: calc(50% - 5rem)
   }
 }
@@ -66,6 +66,10 @@
         grid-template-columns: 1fr 1fr;
         margin: 0 auto;
       }
+    }
+
+    .barra {
+      display: none;
     }
   }
 }

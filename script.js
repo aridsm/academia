@@ -22,7 +22,7 @@ window.addEventListener('click', hideMenu)
 
 const modal = document.querySelector('#modal')
 const btnFecharModal = document.querySelector('#modal .btn-fechar')
-const listaGaleria = document.querySelectorAll('#galeria ul li')
+const listaGaleria = document.querySelectorAll('#galeria ul li button')
 const backdropModal = document.querySelector('.backdrop')
 
 function showModal(src, alt, descricao) {
@@ -51,3 +51,20 @@ listaGaleria.forEach(li => {
 
 btnFecharModal.addEventListener('click', fecharModal)
 backdropModal.addEventListener('click', fecharModal)
+
+// animacao ao scroll
+
+const animaElements = document.querySelectorAll('[data-anima]');
+
+function animaScroll() {
+  const scroll_page = window.pageYOffset + window.innerHeight * 0.8;
+
+  animaElements.forEach(element => {
+    const element_to_top = element.getBoundingClientRect().top + window.pageYOffset;
+    if (scroll_page > element_to_top) {
+      element.classList.add('animated')
+    }
+  })
+}
+animaScroll()
+window.addEventListener('scroll', animaScroll)
